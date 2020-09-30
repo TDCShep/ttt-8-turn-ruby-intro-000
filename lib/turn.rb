@@ -6,7 +6,10 @@ def display_board (board = " ")
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e4b04f5e1d6d38d0dcacff81bd5075fab507c5b0
 def position_taken? (board, index)
   if board[index] == " " || board[index] == "" || board[index] == nil
     false
@@ -23,14 +26,18 @@ end
       end
  end
 
+<<<<<<< HEAD
  def move (board, index, value = "X")
    board[index] = value
  end
 
+=======
+>>>>>>> e4b04f5e1d6d38d0dcacff81bd5075fab507c5b0
  def input_to_index (input)
   input_to_index = input.to_i - 1
 end
 
+<<<<<<< HEAD
 
 
 #TURN METHOD
@@ -45,5 +52,14 @@ end
       display_board(board)
   else
     turn (board)
+=======
+ def move (array, index, value = "X")
+   array[index] = value
+ end
+
+ def turn(board)
+   puts "Please enter 1-9:"
+   until valid_move? == true
+>>>>>>> e4b04f5e1d6d38d0dcacff81bd5075fab507c5b0
    end
  end
